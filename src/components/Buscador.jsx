@@ -15,10 +15,11 @@ const Buscador = ({ onSearch }) => {
         onChange={(e) => setTermino(e.target.value)}
       />
       <InputGroup>
-        <Button onClick={handleSearch}>Buscar</Button>
+        <Button style={{ display: 'flex', justifyContent: 'center', marginBottom: '1em' }} onClick={handleSearch}>Buscar</Button>
       </InputGroup>
     </InputGroup>
   );
 };
 
 export default Buscador;
+

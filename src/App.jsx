@@ -43,13 +43,16 @@ function App() {
   );
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 text-center">
       {alerta.mensaje && <Alert message={alerta.mensaje} type={alerta.tipo} />}
       <Buscador onSearch={filtrarColaboradores} />
       <Listado colaboradores={colaboradoresFiltrados} onDelete={eliminarColaborador} />
-      <Formulario onAdd={agregarColaborador} />
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Formulario onAdd={agregarColaborador} />
+      </div>
     </div>
   );
 }
 
 export default App;
+
